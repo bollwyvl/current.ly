@@ -36,7 +36,7 @@ the user script.
 
 If there are actually updates being made, we'll need to figure out something better.
 
-[rawr]: ./raw/master/current.ly.user.js
+[rawr]: https://raw.github.com/bollwyvl/current.ly/master/current.ly.user.js
 [gm]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [tm]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en
 
