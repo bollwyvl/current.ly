@@ -89,8 +89,8 @@ controls.css({
   position: "fixed",
   left: "50%",
   opacity: .5,
-  display: "none"
 });
+
 
 function embiggen_album(){
   $('img[src*="400x400"]').each(function(idx, img){
@@ -107,6 +107,7 @@ function embiggen_album(){
   setTimeout(embiggen_album, 5000);
 }
 
+
 function handle_keypress(event){
   for(var ext in external){
     if(external[ext].keys && external[ext].keys.indexOf(event.which)){
@@ -115,13 +116,15 @@ function handle_keypress(event){
   }
 }
 
+
 // namespace for external sites with key bindings!
-var external = {}
+var external = {};
 
 // search grooveshark!
 external.grooveshark = function(artist, title){
   window.open(
-    "http://html5.grooveshark.com/#!/search/" + encodeURI(artist + " " + title),
+    "http://html5.grooveshark.com/#!/search/" +
+      encodeURI(artist + " " + title),
     "grooveshark");
 };
 // listen to `G` and `g`
@@ -130,7 +133,8 @@ external.grooveshark.keys = [121, 89];
 // search youtube!
 external.youtube = function(artist, title){
   window.open(
-    "http://www.youtube.com/results?search_query=" + encodeURI(artist + " " + title),
+    "http://www.youtube.com/results?search_query=" + 
+      encodeURI(artist + " " + title),
     "youtube");
 };
 // listen to `Y` and `y`

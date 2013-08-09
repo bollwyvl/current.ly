@@ -12,7 +12,7 @@ on a second monitor.
 
 Screenshot
 ==========
-__Fortcoming__
+![screenshot](screenshot.png)
 
 
 Features
